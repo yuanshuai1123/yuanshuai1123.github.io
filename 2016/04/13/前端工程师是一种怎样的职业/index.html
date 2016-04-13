@@ -1,0 +1,712 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="front-end," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="<%- config.root %>favicon.ico" />
+
+
+
+
+
+
+<meta name="description" content="前端工程师已经是大家不再陌生的一个软件行业的工种了，尽管这一工种诞生也没几年。作为一名从业三年的前端工程师，我尝试结合业界标准与我的理解，来尽可能诠释一下前端工程师这个职业。这篇文章的适读人群为：非web方向的软件开发者、产品经理以及与产品挂钩的相关人士、正在纠结需不需要招聘一个前端的老板们、刚刚走上工作岗位的前端新手们、以及所有对前端感兴趣的父老乡亲们。
+前端工程师的英文名为front-end">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端工程师是一种怎样的职业">
+<meta property="og:url" content="http://yuanshuai1123.github.io/2016/04/13/前端工程师是一种怎样的职业/index.html">
+<meta property="og:site_name" content="Sean">
+<meta property="og:description" content="前端工程师已经是大家不再陌生的一个软件行业的工种了，尽管这一工种诞生也没几年。作为一名从业三年的前端工程师，我尝试结合业界标准与我的理解，来尽可能诠释一下前端工程师这个职业。这篇文章的适读人群为：非web方向的软件开发者、产品经理以及与产品挂钩的相关人士、正在纠结需不需要招聘一个前端的老板们、刚刚走上工作岗位的前端新手们、以及所有对前端感兴趣的父老乡亲们。
+前端工程师的英文名为front-end">
+<meta property="og:updated_time" content="2016-04-13T04:12:05.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端工程师是一种怎样的职业">
+<meta name="twitter:description" content="前端工程师已经是大家不再陌生的一个软件行业的工种了，尽管这一工种诞生也没几年。作为一名从业三年的前端工程师，我尝试结合业界标准与我的理解，来尽可能诠释一下前端工程师这个职业。这篇文章的适读人群为：非web方向的软件开发者、产品经理以及与产品挂钩的相关人士、正在纠结需不需要招聘一个前端的老板们、刚刚走上工作岗位的前端新手们、以及所有对前端感兴趣的父老乡亲们。
+前端工程师的英文名为front-end">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 前端工程师是一种怎样的职业 | Sean </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=54610626";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Sean</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                前端工程师是一种怎样的职业
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-13T10:23:00+08:00" content="2016-04-13">
+              2016-04-13
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>前端工程师已经是大家不再陌生的一个软件行业的工种了，尽管这一工种诞生也没几年。作为一名从业三年的前端工程师，我尝试结合业界标准与我的理解，来尽可能诠释一下前端工程师这个职业。这篇文章的适读人群为：非web方向的软件开发者、产品经理以及与产品挂钩的相关人士、正在纠结需不需要招聘一个前端的老板们、刚刚走上工作岗位的前端新手们、以及所有对前端感兴趣的父老乡亲们。</p>
+<p>前端工程师的英文名为front-end engineer，简称FE，下文将用FE来代称。现在意义上的前端（并非只制作网页），国内最早开始有大规模招聘岗位应该是2011年左右的事情吧，在此之前，FE的工作基本都是由服务端工程师包办的，或者是由设计师来产出HTML页面。那么，是什么样的原因催生出了FE这一职位呢？本文将从FE的工作内容、专业FE应具备的技能和品质来聊聊这个职业。</p>
+<h5 id="用户体验的操刀者"><a href="#用户体验的操刀者" class="headerlink" title="用户体验的操刀者"></a>用户体验的操刀者</h5><p>前端工程师的首要工作就是开发用户界面，在web系统中，就是指网页了。为什么网页需要专门的FE来写呢？答案就是「用户体验」。随着web2.0概念的普及以及web3.0的提出，用户成为互联网的主要生产者，网页所承载的功能越来越多。</p>
+<p>一方面，企业的「用户体验」诉求很强烈。这个很容易就能理解，如果你的产品看上去就像个钓鱼网站而且还特别难用，就会有一部分用户离你而去。非互联网企业呢？也会面临这样的情况，你花了很大的功夫优化数据库，优化服务器负载，你的客户却很难感知到你的努力。你的系统界面还是八九十年代的风格，客户的第一感觉就是这系统不行，不买你的帐。相反，如果你花一点时间做一套崭新风格的界面出来，客户的第一感觉就是这个系统好炫酷，技术含量很高。不要小看这个第一感觉，对于外行人来说，第一感觉往往起到了决定作用。好多企业都意识到了这一点，所以对用户体验的诉求就上去了。</p>
+<p>另一方面，现在的用户也都很挑剔。毕竟他们使用的产品一个比一个炫，都被惯坏了，你的产品稍有点不爽的地方，就上微博去给你宣传。</p>
+<p>前端工程师是用户体验的把控者，在产品经理构想出交互原型，设计师设计出交互细节后，FE就用他的双手一行行敲出这些代码。他敲出的每一个按钮，每一张图片，都被成千上万的用户点击着，FE与用户可以说是“零距离接触”。作为产品交互的实现者，除了HTML、CSS这两门语言要精通外，对前端要求更高的其实是非技术因素。</p>
+<p>FE需要对用户体验有较深的理解。比如页面上有一个超链接，字体比较小的情况下，用户可能会一下点不中，因为链接的可点击区域是紧贴着文字边缘的。前端可以通过很简单的方法来扩大这个链接的可点击区域，使得用户更容易点中。这就是用户体验，正如《瞬间之美》中提到的那样，touch到用户的内心只需要一瞬间。对用户体验的理解，还体现在对一些交互常识的把握上。比如用户操作某个软件的界面，会感觉它很灵巧，却具体说不出到底是哪里。那么很可能是这个界面上的按钮有着设计良好的四态（正常、鼠标移上、鼠标按下、不可用），它会随时对你的操作给出反馈。</p>
+<p>懂用户体验的前端工程师，会让他的作品与用户沟通，能够touch到用户心中那一块柔软的区域。</p>
+<p>FE需要有一点强迫症。这体现在对任何瑕疵的不容忍。比如采用技术手段让页面的滚动更平滑些，减少页面的视觉抖动，像素级别的定位校准。当用户触碰的内容是一串非电话号码的数字时，不要让手机自动调出拨号功能，等等。很多细节是产品经理无法感知的，因为这些都是很零散的技术手段，只有靠FE来点滴积累。再有极致者，追求让页面的响应时间再减少几个毫秒，让你的手机少耗几KB流量，少耗一些电量。这些甚至连用户都无法感知，但是当你的用户有百万级别或者千万级别，这样做的价值就显现出来了。</p>
+<p>前端工程师需要是一个心思细腻之人，需要对美有所领悟，需要执着地追求完美，需要有品味，有思想，有大局观，最好还能懂点心理学。</p>
+<h5 id="用户端业务逻辑"><a href="#用户端业务逻辑" class="headerlink" title="用户端业务逻辑"></a>用户端业务逻辑</h5><p>做出优雅的界面只是前端工程师的第一步，编程也是必备技能，FE承担着处理用户端业务逻辑的任务。放在以前，用户端就是个IE浏览器，没有什么业务逻辑可言。但现在不同了，用户使用浏览器发表文章、进行社交活动，更复杂的能使用在线工具完成工作。</p>
+<p>javascript就是FE需要掌握的编程语言，他应该通晓这门语言的优势和缺点，掌握各种编程思想、开发模式。利用各种技巧实现交互越来越丰富的界面，同时还要与服务端的工程师沟通，调试接口，完成：页面展示——响应用户操作——提交用户数据——反馈操作结果这一系列流程。</p>
+<p>从这一点上，要求前端工程师要有软件开发的基础，了解计算机的基本原理，网络通信的基本原理，所以计算机相关专业出身的前端会更有优势一些。</p>
+<h5 id="前端也需要架构"><a href="#前端也需要架构" class="headerlink" title="前端也需要架构"></a>前端也需要架构</h5><p>写写网页也要架构？有什么好架的？回答这个问题首先得明确一点，FE的工作内容已不再是「写写页面」这么简单。随着前端代码的规模越来越大，逐渐涌现出了模块化开发、MVC、MVVM等开发模式。团队规模也从原来的单兵作战演变为团队开发。</p>
+<p>所以，一个高级前端工程师，要有架构能力。这个架构能力包括不限于：</p>
+<ul>
+<li>对现有优秀框架的了解与整合使用</li>
+<li>根据项目的业务特点构建出合适的开发模式</li>
+<li>设计前端测试方案保证代码质量</li>
+<li>用工程化方案组织起团队的开发流程。</li>
+</ul>
+<h5 id="向前延伸、向后延伸"><a href="#向前延伸、向后延伸" class="headerlink" title="向前延伸、向后延伸"></a>向前延伸、向后延伸</h5><p>物联网的市场越来越热了，手机是物联网体系中的一个关键节点。前端工程师的战场已不再是单纯的浏览器，将来会覆盖到各种「端设备」上。得益于javascript语言的灵活性，现在用javascript已经可以开发windows应用、ios应用、android应用，可以编写智能电视上的应用。将来，或许是VR、可穿戴设备、智能家电。这是前端可以向前延伸的方向。</p>
+<p>另一方面，由于nodejs的横空出世，javascript这门语言竟然神奇的有了服务端的能力。之前用java、PHP做的事情，js同样可以实现了。本来前端阵营中就有一批人是从后端转过来的，有服务端开发的基础，得了nodejs这一利器，再加上现在市场的需求，快出产品，敏捷开发，前端工程师向后延伸的路线宽广而明亮。事实上，全栈工程师的概念在前年就被提出，BAT这样的业界领头羊早已用nodejs做一些基础设施的建设，而很多小而快的创业公司，也在用nodejs进行快速迭代开发。</p>
+<h5 id="持续学习"><a href="#持续学习" class="headerlink" title="持续学习"></a>持续学习</h5><p>前端领域的技术更新相对于其他领域要快很多，原因大概也是因为这个领域离用户最近吧。有一些新的技术甚至是颠覆性的，前端工程师必须要跟上时代的步伐，否则你开发出的产品在体验上就落后别人一截了。</p>
+<p>有一些市场人员提出的需求，产品经理根据多年的经验评估后觉得无法实现，就被打回了。而事实上，随着新技术的出现，有些你认为无法实现的功能已经可以在前端实现了。随着HTML5的支持度越来越高，前端拥有的能力也会越强。比如利用canvas能够获取到图片上的每一个像素点，这样前端就拥有了图像处理能力。有了FileReader API，前端拥有了本地文件的读取能力，还有地理位置获取等等。</p>
+<p>而这些新东西，就需要前端工程师来不断学习。所以，一个称职的前端必须能够保持持续学习能力，能够对新技术有敏锐的嗅觉。活到老，学到老，说的就是前端工程师。</p>
+<h5 id="高情商的程序猿"><a href="#高情商的程序猿" class="headerlink" title="高情商的程序猿"></a>高情商的程序猿</h5><p>大多数人对程序猿的印象就是情商低、不善言谈。但前端工程师应该是个例外，这是由工作性质决定的。</p>
+<p>从工作流程来看，FE处于设计师的下游，他要接设计稿，转化为网页。同时又是后端工程师的上游，需要把用户产生的数据提交到服务端。横向来看，他又与产品经理有着密切接触，因为他可能随时和产品经理探讨交互的细节。这样一个连接着团队中的其他成员的角色，需要他既是一个粘合剂，又是一个润滑剂。</p>
+<p>前端工程师需要有较高的沟通能力和理解能力。我们经常开玩笑说“设计师活在童话故事里”，因为有时候他们设计的页面根本不符合常规，无法实现。这个时候你就需要耐心的给设计MM讲原理、讲原因，并且告诉她设计需要遵循哪些基本规范。对于产品经理的思想，你要能把握到位，你得理解他比划了半天到底是想要做什么。与后端工程师打交道的时候，你又得马上化身编程达人，跟他们聊数据类型，聊面向对象，聊设计模式。</p>
+<p>你需要能随时切换角色，切换你的表达方式和谈话内容。所以，你得是一只高情商的程序员。</p>
+<p>以上就是我对前端工程师的理解，前端的门槛低，但要成为一名专业的前端工程师，需要掌握的东西太多了。除了前端技术外，我认为前端更重要的是综合能力，包括我上面谈到的思维细腻、有品味、有思想、情商高等等。毕竟你要通过代码与用户产生接触，给用户带来愉悦感。从某种程度上来说，你得是一个好恋人。</p>
+<p>此文章转载自<a href="http://www.cnblogs.com/lvdabao/p/5229640.html" target="_blank" rel="external">http://www.cnblogs.com/lvdabao/p/5229640.html</a></p>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/front-end/" rel="tag">#front-end</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/23/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="Sean Yuan" />
+          <p class="site-author-name" itemprop="name">Sean Yuan</p>
+          <p class="site-description motion-element" itemprop="description">生命不息 装逼不止</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+          
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yuanshuai1123" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/570077235" target="_blank">
+                  
+                    <i class="fa fa-weibo"></i> Weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/yuanshuai3" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://zzen.cc/" target="_blank">God killed himself in 1985</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#用户体验的操刀者"><span class="nav-number">1.</span> <span class="nav-text">用户体验的操刀者</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#用户端业务逻辑"><span class="nav-number">2.</span> <span class="nav-text">用户端业务逻辑</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#前端也需要架构"><span class="nav-number">3.</span> <span class="nav-text">前端也需要架构</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#向前延伸、向后延伸"><span class="nav-number">4.</span> <span class="nav-text">向前延伸、向后延伸</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#持续学习"><span class="nav-number">5.</span> <span class="nav-text">持续学习</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#高情商的程序猿"><span class="nav-number">6.</span> <span class="nav-text">高情商的程序猿</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sean Yuan</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+
+  
+  
+
+
+</body>
+</html>
