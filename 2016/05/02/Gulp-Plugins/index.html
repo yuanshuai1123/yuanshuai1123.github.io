@@ -69,7 +69,7 @@
 你可以把所有代码写到一行，但是我">
 <meta property="og:image" content="http://p7.qhimg.com/t01b21adb0b23364a0c.gif">
 <meta property="og:image" content="http://p4.qhimg.com/t011034e5a90ce13015.gif">
-<meta property="og:updated_time" content="2016-09-02T02:48:58.000Z">
+<meta property="og:updated_time" content="2016-09-02T03:51:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gulp PLugins">
 <meta name="twitter:description" content="GULP-LOAD-PLUGINS我发现gulp-load-plugin模块十分有用，它能够自动地从package.json中加载任意Gulp插件然后把它们附加到一个对象上。它的基本用法如下所示
@@ -259,7 +259,7 @@
       
 
       
-        <h4 id="GULP-LOAD-PLUGINS"><a href="#GULP-LOAD-PLUGINS" class="headerlink" title="GULP-LOAD-PLUGINS"></a>GULP-LOAD-PLUGINS</h4><p>我发现gulp-load-plugin模块十分有用，它能够自动地从package.json中加载任意Gulp插件然后把它们附加到一个对象上。它的基本用法如下所示</p>
+        <h5 id="GULP-LOAD-PLUGINS"><a href="#GULP-LOAD-PLUGINS" class="headerlink" title="GULP-LOAD-PLUGINS"></a>GULP-LOAD-PLUGINS</h5><p>我发现gulp-load-plugin模块十分有用，它能够自动地从package.json中加载任意Gulp插件然后把它们附加到一个对象上。它的基本用法如下所示</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulpLoadPlugins = <span class="built_in">require</span>(<span class="string">'gulp-load-plugins'</span>),</span><br><span class="line">    plugins = gulpLoadPlugins();</span><br></pre></td></tr></table></figure>
 <p>你可以把所有代码写到一行，但是我并不推荐这样做。</p>
 <p>在执行那些代码之后，插件对象就已经包含了插件，并使用“驼峰式”的方式进行命名（例如，gulp-ruby-sass将被加载成plugins.rubySass），这样就可以很方便地使用了。例如，前面的js任务简化为如下：</p>
@@ -269,7 +269,7 @@
 <p>这个例子虽然已经够短了，但是使用更长更复杂的Gulp文件会把它们简化成一两行代码。</p>
 <p>三月初发布的Gulp-load-plugins0.4.0版本添加了延迟加载功能，提高了插件的性能，因为插件在使用的时候才会被加载进来，你不用担心package.json里未被使用的插件影响性能（但是你需要把他们清理掉）。换句话说，如果你在执行任务时只需要两个插件，那么其他不相关的插件就不会被加载。</p>
 <hr>
-<p>####BROWSERSYNC<br><a href="https://browsersync.io/" target="_blank" rel="external">BroserSync</a>在浏览器中展示变化的功能与LiveReload非常相似，但是它有更多的功能。</p>
+<h5 id="BROWSERSYNC"><a href="#BROWSERSYNC" class="headerlink" title="BROWSERSYNC"></a>BROWSERSYNC</h5><p><a href="https://browsersync.io/" target="_blank" rel="external">BroserSync</a>在浏览器中展示变化的功能与LiveReload非常相似，但是它有更多的功能。</p>
 <p>当你改变代码的时候，BrowserSync会重新加载页面，或者如果是css文件，会直接添加进css中，页面并不需要再次刷新。这项功能在网站是禁止刷新的时候是很有用的。假设你正在开发单页应用的第4页，刷新页面就会导致你回到开始页。使用LiveReload的话，你就需要在每次改变代码之后还需要点击四次，而当你修改CSS时，插入一些变化时，BrowserSync会直接将需要修改的地方添加进CSS，就不用再点击回退。</p>
 <p><img src="http://p7.qhimg.com/t01b21adb0b23364a0c.gif" alt="BroserSync"></p>
 <p>BrowserSync提供了一种在多个浏览器里测试网页的很好方式。</p>
@@ -451,7 +451,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#GULP-LOAD-PLUGINS"><span class="nav-number">1.</span> <span class="nav-text">GULP-LOAD-PLUGINS</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#GULP-LOAD-PLUGINS"><span class="nav-number">1.</span> <span class="nav-text">GULP-LOAD-PLUGINS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#BROWSERSYNC"><span class="nav-number">2.</span> <span class="nav-text">BROWSERSYNC</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
